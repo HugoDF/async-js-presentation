@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "reveal-md --port 2000 --preprocessor ./preprocessor/preprocessor.js --highlight-theme color-brewer presentation.md",
+    "dev": "npm start -- -w",
+    "build": "reveal-md presentation.md --preprocessor ./preprocessor/preprocessor.js --highlight-theme color-brewer --static static"
+  },
+  "dependencies": {
+    "node-emoji": "^1.8.1",
+    "reveal-md": "^2.4.0"
+  }
+}
