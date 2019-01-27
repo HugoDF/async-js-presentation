@@ -11,6 +11,16 @@ revealOptions:
 
 ---
 
+Hugo Di Francesco
+
+Engineer at Concrete.cc
+
+Slides: [codewithhugo.com/async-js](https://codewithhugo.com/async-js)
+
+Twitter: [@hugo__df](https://twitter.com/hugo__df)
+
+---
+
 ## Contents :whale:
 
 1. Asynchronicity in JavaScript (a history lesson)
@@ -445,3 +455,10 @@ async fetch > do stuff in memory > async write back
 - "promisify"-ing a callback-based API (read/write file)
 - Why we don't mix async and sync operations
 
+---
+
+## Further Reading :book:
+
+- Slides/write up (including workshop examples) at [codewithhugo.com/async-js](https://codewithhugo.com/async-js)
+- About non-blocking I/O in Node.js docs: [nodejs.org/en/docs/guides/blocking-vs-non-blocking/](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
+- [Async JavaScript: From Callbacks, to Promises, to Async/Await](https://tylermcginnis.com/async-javascript-from-callbacks-to-promises-to-async-await/) - Tyler McGinnis
