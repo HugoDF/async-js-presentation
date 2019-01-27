@@ -416,7 +416,7 @@ A lot of these are to avoid the pitfalls we've looked in the "gotchas" section.
 
 ----
 
-### Separate mix synchronous and asynchronous operations :horse_racing:
+### Separate synchronous and asynchronous operations :horse_racing:
 
 async fetch > do stuff in memory > async write back
 
