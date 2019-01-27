@@ -91,7 +91,7 @@ A callback is:
 - "just" a function
 - in examples, usually anonymous functions (pass `function () {}` directly)
 - according to some style guides, should be an arrow function (`() => {}`)
-- called when the async operation
+- called when the async operation finishes
 
 ----
 
@@ -179,11 +179,27 @@ Spot the unhandled error:
 
 ----
 
-Pros:
+Pros: Chainable
 
-- Chainable: no crazy indent stuff
-- Single error handler (`.catch`)
-- Lots of tightly scoped functions
+no crazy indent stuff
+
+<sample path="./samples/50-promise-flow.js"></sample>
+
+----
+
+Pros: Single error handler
+
+`.catch` once on the chain
+
+<sample path="./samples/50-promise-flow.js"></sample>
+
+----
+
+Pros: lots of tightly scoped functions
+
+Small functions are usually easier to understand
+
+<sample path="./samples/50-promise-flow.js"></sample>
 
 ----
 
@@ -304,7 +320,7 @@ We don't have the whole
 - Browser support is only good in latest/modern browsers
   - polyfills (async-to-gen, regenerator runtime) are sort of big
   - supported in Node 8+ though 🤷‍♀️
-- Keen functional programming people would say it's leads to a more "imperative" style of programming
+- Keen functional programming people would say it leads to a more "imperative" style of programming
 
 ---
 

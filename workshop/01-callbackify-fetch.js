@@ -6,3 +6,7 @@ function get(url, callback) {
     .then((data) => callback(null, data))
     .catch((err) => callback(err))
 }
+
+get('https://jsonplaceholder.typicode.com/todos', (err, data) => {
+  console.log(data)
+})
